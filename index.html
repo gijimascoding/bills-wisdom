@@ -91,49 +91,165 @@
           </div>
         </div>
         <div class="hero-visual" data-animate="fade-in" aria-hidden="true">
-          <!-- Abstract geometric visual — clean architectural grid -->
+          <!-- Institutional cityscape with capital stack layers -->
           <div class="hero-graphic">
-            <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" class="hero-svg" role="img" aria-label="Abstract geometric pattern representing structured finance">
+            <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" class="hero-svg" role="img" aria-label="Stylized cityscape representing real estate private credit">
               <defs>
-                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#1e3050" stop-opacity="0.07"/>
-                  <stop offset="100%" stop-color="#1e3050" stop-opacity="0.02"/>
+                <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1a3a5c" stop-opacity="0.06"/>
+                  <stop offset="100%" stop-color="#0f1b2d" stop-opacity="0.14"/>
                 </linearGradient>
-                <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#b8944f" stop-opacity="0.06"/>
-                  <stop offset="100%" stop-color="#b8944f" stop-opacity="0.01"/>
+                <linearGradient id="bldgNavy" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0f1b2d"/>
+                  <stop offset="100%" stop-color="#1e3050"/>
                 </linearGradient>
-                <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#1e3050" stop-opacity="0.04"/>
-                  <stop offset="100%" stop-color="#1e3050" stop-opacity="0.10"/>
+                <linearGradient id="bldgMid" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1e3050"/>
+                  <stop offset="100%" stop-color="#2a4468"/>
+                </linearGradient>
+                <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#b8944f"/>
+                  <stop offset="100%" stop-color="#c9a96a"/>
+                </linearGradient>
+                <linearGradient id="stackSenior" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1a3a5c" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#0f1b2d" stop-opacity="0.95"/>
+                </linearGradient>
+                <linearGradient id="stackMezz" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1e3050" stop-opacity="0.7"/>
+                  <stop offset="100%" stop-color="#1a3a5c" stop-opacity="0.75"/>
+                </linearGradient>
+                <linearGradient id="stackPref" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#b8944f" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#b8944f" stop-opacity="0.35"/>
+                </linearGradient>
+                <linearGradient id="stackEquity" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#2c2c2c" stop-opacity="0.15"/>
+                  <stop offset="100%" stop-color="#2c2c2c" stop-opacity="0.25"/>
                 </linearGradient>
               </defs>
 
-              <!-- Primary architectural blocks -->
-              <rect x="40" y="60" width="180" height="360" rx="2" fill="url(#g1)" stroke="#1e3050" stroke-opacity="0.06" stroke-width="0.75"/>
-              <rect x="100" y="100" width="200" height="300" rx="2" fill="url(#g2)" stroke="#b8944f" stroke-opacity="0.08" stroke-width="0.75"/>
-              <rect x="180" y="40" width="220" height="340" rx="2" fill="url(#g3)" stroke="#1e3050" stroke-opacity="0.07" stroke-width="0.75"/>
+              <!-- Background glow -->
+              <ellipse cx="260" cy="400" rx="240" ry="60" fill="#1e3050" opacity="0.04"/>
 
-              <!-- Horizontal strata — capital tranches -->
-              <line x1="60" y1="180" x2="200" y2="180" stroke="#1e3050" stroke-opacity="0.10" stroke-width="0.5"/>
-              <line x1="60" y1="260" x2="200" y2="260" stroke="#1e3050" stroke-opacity="0.08" stroke-width="0.5"/>
-              <line x1="60" y1="340" x2="200" y2="340" stroke="#1e3050" stroke-opacity="0.06" stroke-width="0.5"/>
-              <line x1="120" y1="200" x2="280" y2="200" stroke="#b8944f" stroke-opacity="0.08" stroke-width="0.5"/>
-              <line x1="120" y1="300" x2="280" y2="300" stroke="#b8944f" stroke-opacity="0.06" stroke-width="0.5"/>
-              <line x1="200" y1="140" x2="380" y2="140" stroke="#1e3050" stroke-opacity="0.06" stroke-width="0.5"/>
-              <line x1="200" y1="240" x2="380" y2="240" stroke="#1e3050" stroke-opacity="0.04" stroke-width="0.5"/>
-              <line x1="200" y1="320" x2="380" y2="320" stroke="#1e3050" stroke-opacity="0.04" stroke-width="0.5"/>
+              <!-- === BUILDINGS === -->
 
-              <!-- Node points — gold accent at key intersections -->
-              <circle cx="200" cy="180" r="3" fill="#b8944f" opacity="0.35"/>
-              <circle cx="280" cy="200" r="2.5" fill="#1e3050" opacity="0.18"/>
-              <circle cx="380" cy="140" r="2" fill="#b8944f" opacity="0.25"/>
-              <circle cx="200" cy="260" r="2" fill="#1e3050" opacity="0.12"/>
-              <circle cx="280" cy="300" r="2.5" fill="#b8944f" opacity="0.2"/>
-              <circle cx="380" cy="240" r="2" fill="#1e3050" opacity="0.10"/>
+              <!-- Building 1 — tall left tower -->
+              <rect x="60" y="80" width="72" height="340" rx="3" fill="url(#bldgNavy)" opacity="0.88"/>
+              <!-- Windows -->
+              <rect x="72" y="100" width="12" height="16" rx="1" fill="#b8944f" opacity="0.5"/>
+              <rect x="92" y="100" width="12" height="16" rx="1" fill="#fff" opacity="0.12"/>
+              <rect x="112" y="100" width="12" height="16" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="72" y="130" width="12" height="16" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="92" y="130" width="12" height="16" rx="1" fill="#b8944f" opacity="0.45"/>
+              <rect x="112" y="130" width="12" height="16" rx="1" fill="#fff" opacity="0.15"/>
+              <rect x="72" y="160" width="12" height="16" rx="1" fill="#b8944f" opacity="0.3"/>
+              <rect x="92" y="160" width="12" height="16" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="112" y="160" width="12" height="16" rx="1" fill="#b8944f" opacity="0.5"/>
+              <rect x="72" y="190" width="12" height="16" rx="1" fill="#fff" opacity="0.12"/>
+              <rect x="92" y="190" width="12" height="16" rx="1" fill="#b8944f" opacity="0.4"/>
+              <rect x="112" y="190" width="12" height="16" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="72" y="220" width="12" height="16" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="92" y="220" width="12" height="16" rx="1" fill="#fff" opacity="0.15"/>
+              <rect x="112" y="220" width="12" height="16" rx="1" fill="#b8944f" opacity="0.45"/>
+              <rect x="72" y="250" width="12" height="16" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="92" y="250" width="12" height="16" rx="1" fill="#b8944f" opacity="0.3"/>
+              <rect x="112" y="250" width="12" height="16" rx="1" fill="#fff" opacity="0.12"/>
+              <!-- Antenna -->
+              <line x1="96" y1="80" x2="96" y2="58" stroke="#0f1b2d" stroke-width="1.5" opacity="0.6"/>
+              <circle cx="96" cy="56" r="2" fill="#b8944f" opacity="0.7"/>
 
-              <!-- Subtle diagonal — structural tension -->
-              <line x1="40" y1="420" x2="400" y2="40" stroke="#b8944f" stroke-opacity="0.06" stroke-width="0.5"/>
+              <!-- Building 2 — main center tower (tallest) -->
+              <rect x="152" y="40" width="100" height="380" rx="3" fill="url(#bldgNavy)" opacity="0.92"/>
+              <!-- Crown detail -->
+              <rect x="162" y="40" width="80" height="6" rx="1" fill="#b8944f" opacity="0.6"/>
+              <!-- Windows grid -->
+              <rect x="166" y="60" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.5"/>
+              <rect x="188" y="60" width="14" height="18" rx="1.5" fill="#fff" opacity="0.15"/>
+              <rect x="210" y="60" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.4"/>
+              <rect x="232" y="60" width="14" height="18" rx="1.5" fill="#fff" opacity="0.1"/>
+              <rect x="166" y="92" width="14" height="18" rx="1.5" fill="#fff" opacity="0.1"/>
+              <rect x="188" y="92" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.45"/>
+              <rect x="210" y="92" width="14" height="18" rx="1.5" fill="#fff" opacity="0.12"/>
+              <rect x="232" y="92" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.35"/>
+              <rect x="166" y="124" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.3"/>
+              <rect x="188" y="124" width="14" height="18" rx="1.5" fill="#fff" opacity="0.08"/>
+              <rect x="210" y="124" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.5"/>
+              <rect x="232" y="124" width="14" height="18" rx="1.5" fill="#fff" opacity="0.15"/>
+              <rect x="166" y="156" width="14" height="18" rx="1.5" fill="#fff" opacity="0.12"/>
+              <rect x="188" y="156" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.4"/>
+              <rect x="210" y="156" width="14" height="18" rx="1.5" fill="#fff" opacity="0.1"/>
+              <rect x="232" y="156" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.45"/>
+              <rect x="166" y="188" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.35"/>
+              <rect x="188" y="188" width="14" height="18" rx="1.5" fill="#fff" opacity="0.15"/>
+              <rect x="210" y="188" width="14" height="18" rx="1.5" fill="#b8944f" opacity="0.3"/>
+              <rect x="232" y="188" width="14" height="18" rx="1.5" fill="#fff" opacity="0.08"/>
+
+              <!-- Building 3 — right mid tower -->
+              <rect x="272" y="120" width="80" height="300" rx="3" fill="url(#bldgMid)" opacity="0.85"/>
+              <!-- Windows -->
+              <rect x="284" y="140" width="12" height="16" rx="1" fill="#b8944f" opacity="0.4"/>
+              <rect x="304" y="140" width="12" height="16" rx="1" fill="#fff" opacity="0.12"/>
+              <rect x="324" y="140" width="12" height="16" rx="1" fill="#b8944f" opacity="0.5"/>
+              <rect x="284" y="170" width="12" height="16" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="304" y="170" width="12" height="16" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="324" y="170" width="12" height="16" rx="1" fill="#fff" opacity="0.15"/>
+              <rect x="284" y="200" width="12" height="16" rx="1" fill="#b8944f" opacity="0.45"/>
+              <rect x="304" y="200" width="12" height="16" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="324" y="200" width="12" height="16" rx="1" fill="#b8944f" opacity="0.3"/>
+              <rect x="284" y="230" width="12" height="16" rx="1" fill="#fff" opacity="0.12"/>
+              <rect x="304" y="230" width="12" height="16" rx="1" fill="#b8944f" opacity="0.4"/>
+              <rect x="324" y="230" width="12" height="16" rx="1" fill="#fff" opacity="0.1"/>
+
+              <!-- Building 4 — far right short -->
+              <rect x="372" y="200" width="64" height="220" rx="3" fill="url(#bldgNavy)" opacity="0.75"/>
+              <rect x="382" y="218" width="10" height="14" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="398" y="218" width="10" height="14" rx="1" fill="#fff" opacity="0.12"/>
+              <rect x="414" y="218" width="10" height="14" rx="1" fill="#b8944f" opacity="0.45"/>
+              <rect x="382" y="246" width="10" height="14" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="398" y="246" width="10" height="14" rx="1" fill="#b8944f" opacity="0.3"/>
+              <rect x="414" y="246" width="10" height="14" rx="1" fill="#fff" opacity="0.15"/>
+              <rect x="382" y="274" width="10" height="14" rx="1" fill="#b8944f" opacity="0.4"/>
+              <rect x="398" y="274" width="10" height="14" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="414" y="274" width="10" height="14" rx="1" fill="#b8944f" opacity="0.35"/>
+
+              <!-- Building 5 — small far left -->
+              <rect x="16" y="240" width="32" height="180" rx="2" fill="#1e3050" opacity="0.55"/>
+              <rect x="22" y="256" width="8" height="10" rx="1" fill="#b8944f" opacity="0.3"/>
+              <rect x="34" y="256" width="8" height="10" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="22" y="278" width="8" height="10" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="34" y="278" width="8" height="10" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="22" y="300" width="8" height="10" rx="1" fill="#b8944f" opacity="0.25"/>
+              <rect x="34" y="300" width="8" height="10" rx="1" fill="#fff" opacity="0.12"/>
+
+              <!-- Building 6 — far right accent -->
+              <rect x="448" y="260" width="48" height="160" rx="2" fill="#1e3050" opacity="0.5"/>
+              <rect x="456" y="276" width="8" height="12" rx="1" fill="#b8944f" opacity="0.35"/>
+              <rect x="470" y="276" width="8" height="12" rx="1" fill="#fff" opacity="0.1"/>
+              <rect x="484" y="276" width="8" height="12" rx="1" fill="#b8944f" opacity="0.25"/>
+              <rect x="456" y="300" width="8" height="12" rx="1" fill="#fff" opacity="0.08"/>
+              <rect x="470" y="300" width="8" height="12" rx="1" fill="#b8944f" opacity="0.4"/>
+              <rect x="484" y="300" width="8" height="12" rx="1" fill="#fff" opacity="0.12"/>
+
+              <!-- === GROUND LINE === -->
+              <line x1="0" y1="420" x2="520" y2="420" stroke="#0f1b2d" stroke-width="1" opacity="0.2"/>
+
+              <!-- === CAPITAL STACK BARS (below skyline) === -->
+              <!-- Senior Debt — largest, most prominent -->
+              <rect x="60" y="430" width="400" height="10" rx="2" fill="url(#stackSenior)"/>
+              <text x="470" y="438" font-family="Inter, sans-serif" font-size="7" fill="#1a3a5c" opacity="0.7" font-weight="600" letter-spacing="0.08em">SENIOR</text>
+
+              <!-- Mezzanine -->
+              <rect x="100" y="444" width="320" height="8" rx="2" fill="url(#stackMezz)"/>
+              <text x="428" y="451" font-family="Inter, sans-serif" font-size="6" fill="#1e3050" opacity="0.5" font-weight="500" letter-spacing="0.06em">MEZZ</text>
+
+              <!-- Preferred Equity -->
+              <rect x="140" y="456" width="240" height="7" rx="2" fill="url(#stackPref)"/>
+              <text x="388" y="462" font-family="Inter, sans-serif" font-size="6" fill="#b8944f" opacity="0.6" font-weight="500" letter-spacing="0.06em">PREF</text>
+
+              <!-- Common Equity — smallest -->
+              <rect x="180" y="467" width="160" height="6" rx="2" fill="url(#stackEquity)"/>
+              <text x="348" y="472" font-family="Inter, sans-serif" font-size="6" fill="#2c2c2c" opacity="0.35" font-weight="500" letter-spacing="0.06em">EQUITY</text>
             </svg>
           </div>
         </div>
